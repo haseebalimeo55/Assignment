@@ -1,0 +1,56 @@
+
+
+  body 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    margin: 0;
+    background: #19ca80;
+  }
+
+
+  .dice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+  }
+
+  .dice {
+    background: white;
+    border: 3px solid black;
+    border-radius: 22px;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .dot {
+    width: 28px;
+    height: 28px;
+    background: #ff6b6b;
+    border: 2px solid #0010a0;
+    border-radius: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .pos-1 { grid-row: 1; grid-column: 1; }        
+  .pos-2 { grid-row: 1; grid-column: 1; }          
+  .pos-3 { grid-row: 3; grid-column: 3; }          
+  .pos-4 { grid-row: 2; grid-column: 2; }          
+  .pos-5 { grid-row: 3; grid-column: 1; }          
+  .pos-6 { grid-row: 1; grid-column: 3; }          
+
+  .pos-tl { grid-row: 1; grid-column: 1; }
+  .pos-tm { grid-row: 1; grid-column: 2; }
+  .pos-tr { grid-row: 1; grid-column: 3; }
+  .pos-bl { grid-row: 3; grid-column: 1; }
+  .pos-bm { grid-row: 3; grid-column: 2; }
+  .pos-br { grid-row: 3; grid-column: 3; }
